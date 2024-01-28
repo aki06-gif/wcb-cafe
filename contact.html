@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WCBCafe-CONTACT</title><!--ページのタイトルを設定-->
+<meta name="description" content="プレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ" />
+
+<!--OGP-->
+<meta property="og:site_name" content="WCBCafe">　<!--サイト名（ページではなくサイト名）-->
+<meta property="og:url" content="サイトURL">　<!--サイトURL:絶対パスで記載-->
+<meta property="og:type" content="article"> <!--トップページはwebsite、それ以外はarticle-->
+<meta property="og:title" content="WCBCafe-CONTACT"> <!--ページのタイトルを設定-->
+<meta property="og:description" content="WCBCafeのお問合せページです。お問合せフォームの他、アクセス情報や、snsでの発信情報も掲載しています。">　<!--WEBページの説明文。表示される文字数は、60~120字文字程度-->
+<meta property="og:image" content="images/ogp.jpg">　<!--シェアされた時に表示させたい画像:1200x630pxの画像。画像内の主要なコンテンツは正方形に収める-->
+<!--googliフォント-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+<!--CSS-->
+<link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--icon-->
+<link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+<!--Facebook JavaScript SDKのコード-->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0" nonce="ymc9AFsC"></script>
+<!--top画像とheader-->
+<div id="contact" class="big-bg">
+  <header class="page-header wrapper">
+    <h1 ><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBCafeホーム"></a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="news.html">news</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper" >
+    <h2 class="page-title">Contact</h2>
+    <form action="#">
+      <div>
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="your-name">
+      </div>
+      <div>
+        <label for="mail">メールアドレス</label>
+        <input type="email" id="email" name="your-email">
+      </div>
+      <div>
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="your-message"></textarea>
+      </div>
+      <input type="submit" class="button" value="送信">
+    </form>
+  </div><!--/.wrapper-->
+</div>
+<!--店舗情報と地図-->
+<section id="location">
+ <div class="wrapper">
+   <div class="location-info">
+     <h3 class="sub-title">カフェ東駅前点</h3>
+     <p>住所：東京都〇〇区<br>〇〇〇〇〇〇　000-2-1
+     <br>〇〇〇〇〇〇<br>
+     電話　03-1111-1111<br>
+     営業時間　10:00～20:00<br>
+     休日：水曜
+     </p>
+   </div><!--/.location-info">--> 
+   <div class="locaation-map">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mXB2pahkAicuP8KnTZgXDeCMQ29Lqnw&ehbc=2E312F" width="640" height="480"></iframe>
+  <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9166.600783967482!2d139.75023996097383!3d35.67989296105398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bf9b3e08c37%3A0x7d61370ac23eb1bc!2zQVdraXRjaGVuIFRPS1lPIOaWsOS4uOODk-ODq-W6lw!5e0!3m2!1sja!2sjp!4v1706322398646!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--> 
+   </div><!--/.google-map-->
+ </div><!--/.wrapper-->
+</section><!--/#location-->
+<!--店舗情報と地図-->
+<section id="sns">
+  <div class="wrapper">
+    <div class="sns-box">
+      <h3 class="sub-title">Facebook</h3>
+      <!--Facebook JavaScript SDKのコード-->
+      <div class="fb-page" data-href="https://www.facebook.com/?locale=ja_JP" data-tabs="timeline" data-width="" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div><!--/.fb-page-->
+    </div>
+    
+    <div class="sns-box">
+      <h3 class="sub-title">X</h3>
+     <a class="twitter-timeline" data-lang="ja" data-height="315" href="https://twitter.com/home?ref_src=twsrc%5Etfw">Tweets by home</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    
+    <div class="sns-box">
+      <h3 class="sub-title">YouTube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HRfmGwIhYNE?si=_7Jjwpvb6z9DdF2M&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  
+  </div><!--/.wrapper-->
+
+
+
+</section><!--/#sns-->
+<footer>
+  <div class="wrapper">
+    <p><small>&copy;2019 Manbox</small></p>
+  </div>
+</footer>
+</body>
+</html>
